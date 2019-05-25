@@ -1,4 +1,4 @@
-# node-wuprotos
+# node-wuprotos [![Build Status](https://travis-ci.org/hpwizardsunite-dev-contrib/node-wuprotos.svg?branch=master)](https://travis-ci.org/hpwizardsunite-dev-contrib/node-wuprotos)
 Uses [protobuf.js](https://github.com/dcodeIO/protobuf.js) to compile the Protobuf files from
 [WUProtos](https://github.com/Furtif/WUProtos) into an easy to use Node module.
 

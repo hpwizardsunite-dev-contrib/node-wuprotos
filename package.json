@@ -36,9 +36,9 @@
     "test": "node test/test.js",
     "build": "run-s compile minjs uglify tempjs ts",
     "compile": "node WUProtos/src/WUProtos/compile.js",
-    "minjs": "pbjs --keep-case -t static-module --no-verify --no-create --no-delimited --no-beautify --no-comments -o compiled.js ./WUProtos/src/WUProtos/WUProtos.proto",
+    "minjs": "pbjs --keep-case -t static-module --no-verify --no-create --no-delimited --no-beautify --no-comments -o compiled.js ./WUProtos/src/WUProtos/WUProtos.proto.js",
     "uglify": "uglifyjs compiled.js -o compiled.js",
-    "tempjs": "pbjs --keep-case -t static-module --no-verify --no-create --no-delimited -o temp-ts.js ./WUProtos/src/WUProtos/WUProtos.proto",
+    "tempjs": "pbjs --keep-case -t static-module --no-verify --no-create --no-delimited -o temp-ts.js ./WUProtos/src/WUProtos/WUProtos.proto.js",
     "ts": "pbts --no-comments -o compiled.d.ts temp-ts.js"
   }
 }
